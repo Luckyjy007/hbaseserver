@@ -21,6 +21,7 @@ import org.springframework.context.annotation.ImportResource;
 @EnableDiscoveryClient
 @ImportResource(locations = {"classpath:/config/hbase-spring.xml"})
 public class BigDataApplication {
+
     public static void main(String[] args) {
         //System.setProperty("hadoop.home.dir", "");
         SpringApplication.run(BigDataApplication.class, args);
